@@ -5,6 +5,7 @@
              x:Class="SQLite11.MainPage">
     <ContentPage.Content>
         <StackLayout>
+            
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
