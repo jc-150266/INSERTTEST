@@ -93,21 +93,6 @@ namespace SQLite11
             //Userテーブルに適当なデータを追加する
             UserModel.insertUser(InsertName);
 
-        }
-
-        //deleteイベントハンドラ
-        void DeleteClicked(object sender, EventArgs e)
-        {
-            //UserModel.deleteUser(deleteId);
-            UserModel.deleteUser(1);
-
-        }
-
-        //selectイベントハンドラ
-        void SelectClicked(object sender, EventArgs e)
-        {
-
-            //Userテーブルの行データを取得
             var query = UserModel.selectUser(); //中身はSELECT * FROM [User]
             var layout = new StackLayout { HorizontalOptions = LayoutOptions.Center, Margin = new Thickness { Top = 100 } };
             foreach (var user in query)
@@ -122,10 +107,17 @@ namespace SQLite11
                 Text = "Select!",
                 TextColor = Color.Red,
             };
-            layout.Children.Add(Select);
-            Select.Clicked += SelectClicked;
 
-            Content = layout;
+        }
+
+        //deleteイベントハンドラ
+        void DeleteClicked(object sender, EventArgs e)
+        {
+            //UserModel.deleteUser(deleteId);
+            UserModel.deleteUser(1);
+
+        }
+
 
 
             /*
