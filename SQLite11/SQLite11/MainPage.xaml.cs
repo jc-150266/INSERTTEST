@@ -63,23 +63,13 @@ namespace SQLite11
             Insert.Clicked += InsertClicked;
             layout.Children.Add(insertEntry);
 
-            //--------------------------------deleteします------------------------------
-            var Delete = new Button
+            insertEntry = new Entry
             {
-                WidthRequest = 60,
-                Text = "Delete!",
-                TextColor = Color.Red,
+                WidthRequest = 60
             };
-            layout.Children.Add(Delete);
-            Delete.Clicked += DeleteClicked;
-            /*
-            deleteEntry = new Entry
-            {
-                WidthRequest = 60,
-            };
-            layout.Children.Add(deleteEntry);
-            deleteId = int.Parse(deleteEntry.Text);
-            */
+            layout.Children.Add(Insert);
+            Insert.Clicked += InsertClicked;
+            layout.Children.Add(insertEntry);
 
             //--------------------------------selectします------------------------------
             var Select = new Button
