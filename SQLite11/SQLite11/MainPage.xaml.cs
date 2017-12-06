@@ -71,17 +71,7 @@ namespace SQLite11
             Insert.Clicked += InsertClicked;
             layout.Children.Add(insertEntry);
 
-            //--------------------------------selectします------------------------------
-            var Select = new Button
-            {
-                WidthRequest = 60,
-                Text = "Select!",
-                TextColor = Color.Red,
-            };
-            layout.Children.Add(Select);
-            Select.Clicked += SelectClicked;
 
-            Content = layout;
         }
 
 
@@ -138,6 +128,6 @@ namespace SQLite11
                     }
                 };
                 Content = scrollView;*/
-        }
+        
     }
 }
