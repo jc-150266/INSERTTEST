@@ -90,24 +90,9 @@ namespace SQLite11
                 //Userテーブルの名前列をLabelに書き出す
                 layout.Children.Add(new Label { Text = user.Name });
             }
-            //selectする
-            var Select = new Button
-            {
-                WidthRequest = 60,
-                Text = "Select!",
-                TextColor = Color.Red,
-            };
 
-        }
 
-        //deleteイベントハンドラ
-        void DeleteClicked(object sender, EventArgs e)
-        {
-            //UserModel.deleteUser(deleteId);
-            UserModel.deleteUser(1);
-
-        }
-
+        Content = layout;
 
 
             /*
@@ -128,6 +113,6 @@ namespace SQLite11
                     }
                 };
                 Content = scrollView;*/
-        
+        }
     }
 }
