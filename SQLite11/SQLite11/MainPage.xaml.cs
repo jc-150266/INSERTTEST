@@ -103,6 +103,14 @@ namespace SQLite11
                 //Userテーブルの名前列をLabelに書き出す
                 layout.Children.Add(new Label { Text = user.Name });
             }
+            var Select = new Button
+            {
+                WidthRequest = 60,
+                Text = "Select!",
+                TextColor = Color.Red,
+            };
+            layout.Children.Add(Select);
+            Select.Clicked += SelectClicked;
 
             Content = layout;
 
