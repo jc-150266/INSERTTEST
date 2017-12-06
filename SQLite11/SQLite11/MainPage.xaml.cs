@@ -104,6 +104,8 @@ namespace SQLite11
                 layout.Children.Add(new Label { Text = user.Name });
             }
 
+            Content = layout;
+
 
 
             /*
