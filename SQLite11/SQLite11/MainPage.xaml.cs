@@ -92,7 +92,7 @@ namespace SQLite11
             }
 
 
-        Content = layout;
+            Content = layout;
 
 
             /*
